@@ -1,33 +1,39 @@
 package main
 
 import (
-	"fmt"
-	"runtime"
-
-	"github.com/antero/go/ejercicios"
-	"github.com/antero/go/variables"
+	"github.com/antero/go/files"
 )
 
 func main(){
-	estado, texto := variables.ConviertoaTexto(1588)
-	fmt.Println(estado)
-	fmt.Println(texto)
+	// estado, texto := variables.ConviertoaTexto(1588)
+	// fmt.Println(estado)
+	// fmt.Println(texto)
 	
-	if os := runtime.GOOS; os == "linux" || os == "Os X."{
-		fmt.Println("Esto no es Windows", os)
-	} else {
-		fmt.Println("Esto es Windows")
-	}
+	// if os := runtime.GOOS; os == "linux" || os == "Os X."{
+	// 	fmt.Println("Esto no es Windows", os)
+	// } else {
+	// 	fmt.Println("Esto es Windows")
+	// }
 
-	switch os:= runtime.GOOS; os {
-	case "linux":
-		fmt.Println("Esto es Linux")
-	case "darwin":
-		fmt.Println("Esto es Darwin")	
-	default:
-		fmt.Printf("%s \n", os)
-	}
-	numero, texto := ejercicios.ConvNumerico("500")
-	fmt.Println(numero)
-	fmt.Println(texto)
+	// switch os:= runtime.GOOS; os {
+	// case "linux":
+	// 	fmt.Println("Esto es Linux")
+	// case "darwin":
+	// 	fmt.Println("Esto es Darwin")	
+	// default:
+	// 	fmt.Printf("%s \n", os)
+	// }
+	// numero, texto := ejercicios.ConvNumerico("500")
+	// fmt.Println(numero)
+	// fmt.Println(texto)
+
+	// teclado.IngresoNumeros()
+	// iteraciones.Iterar()
+	
+	//fmt.Println(ejercicios.TabladeMultiplicar())
+
+	//files.GrabaTabla()
+
+	//files.SumaTabla()
+	files.LeoArchivo()
 }
